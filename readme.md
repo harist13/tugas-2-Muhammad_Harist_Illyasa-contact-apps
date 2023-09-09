@@ -1,20 +1,11 @@
+Code yg di tambahkan :
+-fitur reset data
 
-# Cara menjalankan program :
+-fitur pencarian data secara dinamis (cari data hanya mengandung 1 huruf)
 
-* pastikan sudah terinstal nodejs, untuk mengeceknya silahkan buka cmd dan ketik : 
-```bash
-node -v
-```
-jika muncul seperti ini : v18.12.1 berarti teman - teman sudah menginstall nodejs
+-hapus satu data
 
-* silahkan clone atau download kode ini kedalam komputer teman - teman 
-* jika sudah, jalankan program tersebut dengan mengetik : 
-```bash
-node index.js
-```
-atau
+code yg di ubah :
+-pada menu tambah data dibagian input nama di tambahkan validasi input harus berupa string dan di bagian input nomor hp di tambahkan validasi input harus berupa angka selain itu tidak di perbolehkan
 
-```bash
-npm run start
-```
-boleh pilih salah satu
+-pada bagian input nomor hp di tambahkan validasi jika nomor yg input sudah ada berada di dalam data
