@@ -167,16 +167,15 @@ function pencarianData() {
 
   
 function hapusData() {
-    readline.question("Masukkan nama kontak yang ingin dihapus: ", (namaKontak) => {
-        const index = databaseKontak.findIndex((kontak) =>
-            kontak.nama.toLowerCase() === namaKontak.toLowerCase()
-        );
+    console.table(databaseKontak);
+    readline.question("Masukkan indeks kontak yang ingin dihapus: ", (indeks) => {
+        const index = parseInt(indeks);
 
-        if (index !== -1) {
+        if (index >= 0 && index < databaseKontak.length) {
             const deletedKontak = databaseKontak.splice(index, 1);
             console.log(`Kontak dengan nama '${deletedKontak[0].nama}' telah dihapus.`);
         } else {
-            console.log(`Kontak dengan nama '${namaKontak}' tidak ditemukan.`);
+            console.log(`Indeks '${indeks}' tidak valid atau kontak tidak ditemukan.`);
         }
 
         kembali();
